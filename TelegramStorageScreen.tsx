@@ -63,8 +63,8 @@ export function TelegramStorageScreen({ onPlayTrack, currentTrack, isPlaying }: 
     setLoading(true);
     try {
       const [statusRes, tracksRes] = await Promise.all([
-        fetch('/api/telegram/status'),
-        fetch('/api/telegram/tracks')
+        fetch('https://music-with-error-.onrender.com/api/telegram/status')
+        fetch('https://music-with-error-.onrender.com/api/telegram/tracks')
       ]);
 
       const statusData = await statusRes.json();
@@ -83,7 +83,7 @@ export function TelegramStorageScreen({ onPlayTrack, currentTrack, isPlaying }: 
     e.preventDefault();
     setConfigMsg('');
     try {
-      const res = await fetch('/api/telegram/config', {
+      const res = await fetch('https://music-with-error-.onrender.com/api/telegram/config')', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ botToken, channelId })
@@ -116,7 +116,7 @@ export function TelegramStorageScreen({ onPlayTrack, currentTrack, isPlaying }: 
         });
       }
 
-      const res = await fetch('/api/telegram/upload', {
+      const res = await fetch('https://music-with-error-.onrender.com/api/telegram/upload')', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
