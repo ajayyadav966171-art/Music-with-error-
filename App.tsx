@@ -16,7 +16,7 @@ import { TrackOptionSheet } from './TrackOptionSheet';
 import { DevicePickerSheet } from './DevicePickerSheet';
 import { QueueDrawer } from './QueueDrawer';
 
-import { TRACKS, PLAYLISTS, ARTISTS } from './data/musicData';
+import { TRACKS, PLAYLISTS, ARTISTS } from './musicData';
 import { Track, Playlist, Artist, TabType, FilterChip, UserProfile, AppSettings, DownloadedTrack } from './types';
 import { audioEngine } from './services/audioEngine';
 import {
