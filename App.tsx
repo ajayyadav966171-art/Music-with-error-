@@ -18,13 +18,13 @@ import { QueueDrawer } from './QueueDrawer';
 
 import { TRACKS, PLAYLISTS, ARTISTS } from './musicData';
 import { Track, Playlist, Artist, TabType, FilterChip, UserProfile, AppSettings, DownloadedTrack } from './types';
-import { audioEngine } from './services/audioEngine';
+import { audioEngine } from './audioEngine';
 import {
   getAllDownloadedTracks,
   deleteDownloadedTrack,
   clearAllDownloads,
   downloadTrackWithProgress
-} from './services/offlineStorage';
+} from './offlineStorage';
 
 export default function App() {
   // App Data State
