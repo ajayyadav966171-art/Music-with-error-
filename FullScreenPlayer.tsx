@@ -17,8 +17,8 @@ import {
   Check
 } from 'lucide-react';
 import { motion, PanInfo } from 'motion/react';
-import { Track } from '../types';
-import { audioEngine } from '../services/audioEngine';
+import { Track } from './types';
+import { audioEngine } from './audioEngine';
 
 interface FullScreenPlayerProps {
   currentTrack: Track;
