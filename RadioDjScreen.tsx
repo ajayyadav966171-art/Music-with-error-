@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Sparkles, Sliders, Volume2, Disc, Play, Radio, RefreshCw } from 'lucide-react';
 import { Track } from '../types';
-import { EQUALIZER_PRESETS } from '../data/musicData';
-import { audioEngine } from '../services/audioEngine';
+import { EQUALIZER_PRESETS } from './musicData';
+import { audioEngine } from './audioEngine';
 
 interface RadioDjScreenProps {
   tracks: Track[];
