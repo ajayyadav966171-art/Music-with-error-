@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Search, X, Camera, Mic, Play, TrendingUp, History, Volume2 } from 'lucide-react';
 import { Track, Playlist, Artist } from '../types';
-import { GENRES } from '../data/musicData';
+import { GENRES } from './musicData';
 
 interface SearchScreenProps {
   searchQuery: string;
